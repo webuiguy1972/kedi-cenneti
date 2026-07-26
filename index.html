@@ -1,11 +1,34 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#efc3cd" />
+    <meta
+      name="description"
+      content="Kedi Cenneti, a cozy pixel-art cat collection game."
+    />
     <title>Kedi Cenneti</title>
+    <script type="module" crossorigin src="/kedi-cenneti/assets/index-DchAtKd3.js"></script>
+    <link rel="stylesheet" crossorigin href="/kedi-cenneti/assets/index-CQ9cG16G.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+    <main id="game-shell">
+      <div id="game" aria-label="Kedi Cenneti game"></div>
+      <div
+        id="game-status"
+        class="visually-hidden"
+        role="status"
+        aria-live="polite"
+      >
+        Score 0.
+      </div>
+      <div id="rotate-overlay" role="status" aria-live="polite">
+        <div class="rotate-card">Rotate your device</div>
+      </div>
+    </main>
   </body>
 </html>
